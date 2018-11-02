@@ -1,25 +1,61 @@
 {
-  "name": "candy-picker-frontend",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-scripts": "2.1.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+		"name": "candy-picker-frontend",
+		"version": "0.1.0",
+		"private": true,
+		"description": "Robot candy picker",
+		"dependencies": {
+				"@material-ui/core": "^3.3.2",
+				"@material-ui/icons": "^3.0.1",
+				"axios": "^0.18.0",
+				"bowser": "^2.0.0-beta.3",
+				"history": "^4.7.2",
+				"husky": "^1.1.2",
+				"lint-staged": "^7.3.0",
+				"lodash": "^4.17.11",
+				"moment": "^2.22.2",
+				"node-sass": "^4.9.3",
+				"prettier": "^1.14.3",
+				"prop-types": "^15.6.2",
+				"react": "^16.6.0",
+				"react-dom": "^16.6.0",
+				"react-redux": "^5.0.7",
+				"react-router-dom": "^4.3.1",
+				"react-router-redux": "^5.0.0-alpha.6",
+				"react-scripts": "2.1.1",
+				"react-toastify": "^4.4.0",
+				"redux": "^4.0.0",
+				"redux-logger": "^3.0.6",
+				"redux-saga": "^0.16.0",
+				"socket.io-client": "^2.1.1",
+				"typeface-roboto": "^0.0.54"
+		},
+		"scripts": {
+				"start": "PORT=5020 react-scripts start",
+				"build": "react-scripts build",
+				"test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "deploy": "gcloud app deploy app.yaml"
+		},
+		"eslintConfig": {
+				"extends": "react-app"
+		},
+		"browserslist": [
+				">0.2%",
+				"not dead",
+				"not ie <= 11",
+				"not op_mini all"
+		],
+		"husky": {
+				"hooks": {
+						"pre-commit": "lint-staged"
+				}
+		},
+		"keywords": [],
+		"contributors": [
+				{
+						"name": "Liu Jie",
+						"email": "j.e.liu@accenture.com"
+				}
+		],
+		"license": "UNLICENSED"
 }

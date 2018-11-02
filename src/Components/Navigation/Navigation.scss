@@ -1,0 +1,11 @@
+@import '../../sass/rem';
+
+.candyPickerLogo {
+    background-image: url('../../assets/Candy_arm.svg');
+    width: $px48;
+    position: absolute;
+    right: $px12;
+    height: $px48;
+    background-repeat: no-repeat;
+    top: $px8 - $px4 / 2;
+}

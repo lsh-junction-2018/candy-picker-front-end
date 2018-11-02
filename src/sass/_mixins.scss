@@ -1,0 +1,9 @@
+@import '../../sass/colors';
+@import '../../sass/rem';
+
+@mixin flexLayout($flex: flex, $alignItems: center, $justifyContent: center, $direction: row) {
+	display: $flex;
+	flex-direction: $direction;
+	align-items: $alignItems;
+	justify-content: $justifyContent;
+}

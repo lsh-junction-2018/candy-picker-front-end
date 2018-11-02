@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import PropTypes from 'prop-types';
+import { Route, Switch } from 'react-router-dom';
+import Routes from 'modules/routes';
+import withRoot from 'withRoot';
+
+import Navigation from 'components/Navigation/Navigation';
+import BottomNavigation from 'components/BottomNavigation/BottomNavigation';
+import Home from 'containers/Home/Home';
+
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Navigation />
+        <Switch>
+          <Route exact path={Routes.Home.path} component={Home} />
+        </Switch>
+        <BottomNavigation />
       </div>
     );
   }
 }
 
-export default App;
+App.propTypes = {};
+
+export default withRoot(App);

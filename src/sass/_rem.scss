@@ -1,0 +1,61 @@
+/*! = $rembase: 14px
+--------------------------------------------------------------
+* hmtl { font-size: 87.5%; }
+* body { font-size: 14px; font-size: 1rem; line-height: 1; }
+* 4px    	0.28571429rem
+* 8px		0.571428571rem
+* 12px		0.857142857rem
+* 13px		0.928571429rem
+* 14px		1rem
+* 16px		1.142857143rem
+* 18px		1.285714286rem
+* 20px		1.428571429rem
+* 21px		1.5rem
+* 22px		1.571428571rem
+* 24px		1.714285714rem
+* 28px		2rem
+* 36px		2.571428571rem
+* 38px		2.714285rem
+* 42px		3rem
+* 48px		3.428571429rem
+* 64px		4.57142857rem
+* 72px		5.142857143rem
+*/
+
+$px4: 0.28571429rem;
+$px8: 0.571428571rem;
+$px12: 0.857142857rem;
+$px13: 0.928571429rem;
+$px14: 1rem;
+$px16: 1.142857143rem;
+$px18: 1.285714286rem;
+$px20: 1.428571429rem;
+$px21: 1.5rem;
+$px22: 1.571428571rem;
+$px24: 1.714285714rem;
+$px28: 2rem;
+$px36: 2.571428571rem;
+$px42: 3rem;
+$px48: 3.428571429rem;
+$px64: 4.57142857rem;
+$px72: 5.142857143rem;
+
+/*! = $rembase: 16px
+--------------------------------------------------------------
+* hmtl { font-size: 100%; }
+* body { font-size: 16px; font-size: 1rem; line-height: 1; }
+* 4px    	0.25rem
+* 8px		0.5rem
+* 12px		0.75rem
+* 14px		0.875rem
+* 16px		1rem
+* 18px		1.125rem
+* 20px		1.25rem
+* 22px		1.375rem
+* 24px		1.5rem
+* 32px		2rem
+* 36px		2.25rem
+* 48px		3rem
+* 64px		4rem
+* 72px		4.5rem
+*/

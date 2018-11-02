@@ -1,0 +1,28 @@
+@import '../../sass/rem';
+@import '../../sass/colors';
+
+.homepage {
+	padding: $px12;
+	button {
+		margin: $px8 0;
+		&.blueCandy {
+            svg {
+                fill: $blue
+            }
+		}
+		&.yellowCandy {
+            svg {
+                fill: $yellow
+            }
+		}
+		&.redCandy {
+            svg {
+                fill: $red
+            }
+        }
+        svg {
+            height: $px36;
+            width: $px36;
+        }
+	}
+}
