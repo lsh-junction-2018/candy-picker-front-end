@@ -3,8 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 The main technologies used in this project:
 
 create-react-app
-Redux
-[Redux saga](https://redux-saga.js.org/docs/introduction/BeginnerTutorial.html)
+- Redux
+- [Redux saga](https://redux-saga.js.org/docs/introduction/BeginnerTutorial.html)
 
 
 ## Available Scripts
