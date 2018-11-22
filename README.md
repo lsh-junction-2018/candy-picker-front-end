@@ -1,10 +1,14 @@
+## Candy Picker Front End - 2018 Junction
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 The main technologies used in this project:
 
-create-react-app
-- Redux
+- [Create React App](https://github.com/facebook/create-react-app)
+- [Redux](https://redux.js.org/)
 - [Redux saga](https://redux-saga.js.org/docs/introduction/BeginnerTutorial.html)
+- [axios](https://github.com/axios/axios)
+- [Material-UI](https://material-ui.com/)
 
 
 ## Available Scripts
