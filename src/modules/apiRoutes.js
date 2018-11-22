@@ -5,7 +5,7 @@
 
 const apiRoutes = {
   candyPicker: {
-    path: 'candy'
+    path: 'candyPicker'
   }
 };
 

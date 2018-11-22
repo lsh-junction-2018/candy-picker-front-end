@@ -17,7 +17,6 @@ class Home extends Component {
 	}
 
 	handlePostCandyCommand(command) {
-    console.log('dd')
 		this.props.postCandyPickerCommand(command);
 	}
 

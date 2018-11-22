@@ -9,9 +9,7 @@ export const API_VERSION = 'v1';
 // Default configuration
 export const defaultConfig = {
   // TODO: adjust baseURL
-  baseURL: `${
-    process.env.REACT_APP_BACKEND_DOMAIN
-  }/api/${API_VERSION}/`,
+  baseURL: `/api/${API_VERSION}/`,
   method: 'GET',
   headers: {}
 };

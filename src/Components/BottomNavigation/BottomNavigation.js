@@ -1,14 +1,11 @@
-import React, { Component, Fragment, PureComponent } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import {} from 'lodash';
-import {} from 'modules/utils';
-import Routes from 'modules/routes';
-import {} from 'modules/const';
 
+import { postCandyPickerCommand } from 'actions/candyPickerAction';
 import { BottomNavigation, BottomNavigationAction } from '@material-ui/core';
 import PauseCircleOutlineIcon from '@material-ui/icons/PauseCircleOutline';
+import RepeatIcon from '@material-ui/icons/Repeat';
 
 import './BottomNavigation.scss';
 
@@ -22,6 +19,8 @@ class _BottomNavigation extends Component {
     
     handleChange = (event, value) => {
         this.setState({ value });
+        console.log(value)
+        this.props.postCandyPickerCommand(value === 0 ? 'STOP' : 'RESET');
     };
 
 	render() { 
@@ -30,6 +29,7 @@ class _BottomNavigation extends Component {
 		return (
 			<BottomNavigation className="bottomNavigation" value={value} onChange={this.handleChange} showLabels>
 				<BottomNavigationAction label="Stop" icon={<PauseCircleOutlineIcon />} />
+				<BottomNavigationAction label="RESET" icon={<RepeatIcon />} />
 			</BottomNavigation>
 		);
 	}
@@ -37,6 +37,13 @@ class _BottomNavigation extends Component {
 
 _BottomNavigation.defaultProps = {};
 
-_BottomNavigation.propTypes = {};
+_BottomNavigation.propTypes = {
+	postCandyPickerCommand: PropTypes.func.isRequired,
+};
 
-export default _BottomNavigation;
+export default connect(
+	null,
+	{
+		postCandyPickerCommand,
+	}
+)(_BottomNavigation);
